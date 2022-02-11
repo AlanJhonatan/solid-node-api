@@ -1,2 +1,6 @@
+# excluding project folders
 .vscode/
 node_modules/
+
+# excluding env files
+.env
