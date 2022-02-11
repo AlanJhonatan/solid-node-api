@@ -11,6 +11,7 @@ export class CreateUserController {
       await this.createUserUseCase.execute({ name, email, password });
       return response.status(200).json({ name, email });
     } catch (err) {
+      console.log('error');
       return response
         .status(400)
         .json({ message: err.message || 'Unexpected error.' });
